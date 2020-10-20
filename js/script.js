@@ -64,19 +64,19 @@ function setBgAndGreet() {
 
     switch(true) {
         case hour < 12 && hour >= 6:
-            document.body.style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/images/morning/${images.morning[getRandom(0, 19)]}')`
+            document.body.style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/images/morning/${images.morning[getRandom(0, 19)]}')`
             greeting.textContent = 'Good Morning, '
             break;
         case hour < 18 && hour >= 12:
-            document.body.style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/images/day/${images.day[getRandom(0, 19)]}')`
+            document.body.style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/images/day/${images.day[getRandom(0, 19)]}')`
             greeting.textContent = 'Good Afternoon, '
             break;
         case hour <= 23 && hour >= 18:
-            document.body.style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/images/evening/${images.evening[getRandom(0, 19)]}')`
+            document.body.style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/images/evening/${images.evening[getRandom(0, 19)]}')`
             greeting.textContent = 'Good Evening, '
             break;
         case hour < 6:
-            document.body.style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/images/night/${images.night[getRandom(0, 19)]}')`
+            document.body.style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/images/night/${images.night[getRandom(0, 19)]}')`
             greeting.textContent = 'Good Night, '
             break;
     }
